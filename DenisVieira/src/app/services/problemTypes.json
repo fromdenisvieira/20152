@@ -1,0 +1,51 @@
+[
+	{
+		"id":"1",
+	    "title": "CPU",
+	    "description":"CPU description",
+	    "imgUrl":"assets/img/cpu1.jpg",
+	    "iconName":"fa-building",
+	    "urlListName":"cpu"
+	},
+	{
+		"id":"2",
+	    "title": "Impressora",
+	    "description":"Impressora description",
+	    "imgUrl":"assets/img/impr.jpg",
+	    "iconName":"fa-print",
+	    "urlListName":"impressora"
+	},
+	{
+		"id":"3",
+	    "title": "Internet",
+	    "description":"Internet description",
+	    "imgUrl":"assets/img/internet.jpg",
+	    "iconName":"fa-globe",
+	    "urlListName":"internet"
+	},
+	{
+		"id":"4",
+	    "title": "Periferico",
+	    "description":"Periferico test description",
+	    "imgUrl":"assets/img/periferico1.jpg",
+	    "iconName":"fa-globe",
+	    "urlListName":"periferico"
+	},
+	{
+		"id":"5",
+	    "title": "Sistema",
+	    "description":"Sistema description",
+	    "imgUrl":"assets/img/sistema.jpg",
+	    "iconName":"fa-list-alt",
+	    "urlListName":"sistema"
+	},
+	{
+		"id":"6",
+	    "title": "Procedimento",
+	    "description":"Procedimento description",
+	    "imgUrl":"assets/img/procedimento.jpg",
+	    "iconName":"fa-wrench",
+	    "urlListName":"procedimento"
+	}
+
+]

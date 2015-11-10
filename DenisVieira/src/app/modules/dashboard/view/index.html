@@ -1,13 +1,13 @@
 
 
 
-<div class="row">
+<section class="row" id="search-bar">
   <div class="col s12 m12">
     <nav class="orange lighten-1">
       <div class="nav-wrapper">
         <form>
           <div class="input-field ">
-            <input id="search" type="search" required>
+            <input id="search" type="search" required ng-model="search">
             <label for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
           </div>
@@ -15,123 +15,54 @@
       </div>
     </nav>
   </div>
-</div>
+</section>
+
+<section class="row" id="list-search" n>
+
+      <div class="col s12">
+          <ul class="collection">
+
+              <li class="collection-item avatar">
+                  <i class="material-icons circle green">insert_chart</i>
+                  <span class="title">Title</span>
+                  <p lingdex="3">Description</p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+              </li>
+              <li class="collection-item avatar">
+                  <i class="material-icons circle red">play_arrow</i>
+                  <span class="title">Title</span>
+                  <p lingdex="4">Description</p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+              </li>
+          </ul>
+
+        </div>
 
 
-<div class="row">
+</section>
 
-  <div class="col s12 m6 l4 ">
+<section class="row" id="options">
+
+  <div class="col s12 m6 l4 " ng-repeat="problem in problemTypes">
     <div class="card hoverable small">
        <div class="card-image waves-effect waves-block waves-light">
-         <img class="activator filter-grayscale" src="assets/img/cpu1.jpg">
+         <img class="activator filter-grayscale" ng-src="{{problem.imgUrl}}">
        </div>
        <div class="card-content">
-         <span class="card-title activator grey-text text-darken-4"><i class="fa fa-building"></i>&nbsp CPU<i class="material-icons right">more_vert</i></span>
+         <span class="card-title activator grey-text text-darken-4"><i class="fa {{problem.iconName}}"></i>&nbsp {{problem.title}}<i class="material-icons right">live_help</i></span>
        </div>
        <div class="card-action">
-        <a href="#">VER PROBLEMAS E SOLUÇÕES</a>
+        <a  ng-href="#/problemList/{{problem.urlListName}}">VER PROBLEMAS E SOLUÇÕES</a>
        </div>
        <div class="card-reveal">
-         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-         <p>Here is some more information about this product that is only revealed once clicked on.</p>
-       </div>
-     </div>
-  </div>
-
-  <div class="col s12 m6 l4 ">
-    <div class="card hoverable small">
-       <div class="card-image waves-effect waves-block waves-light">
-         <img class="activator filter-grayscale" src="assets/img/impr.jpg">
-       </div>
-       <div class="card-content">
-         <span class="card-title activator grey-text text-darken-4"><i class="fa fa-print"></i>&nbsp IMPRESSORA<i class="material-icons right">more_vert</i></span>
-       </div>
-       <div class="card-action">
-        <a href="#">VER PROBLEMAS E SOLUÇÕES</a>
-       </div>
-       <div class="card-reveal">
-         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-         <p>Here is some more information about this product that is only revealed once clicked on.</p>
-       </div>
-     </div>
-  </div>
-
-  <div class="col s12 m6 l4 ">
-    <div class="card hoverable small">
-       <div class="card-image waves-effect waves-block waves-light">
-         <img class="activator filter-grayscale" src="assets/img/internet.jpg">
-       </div>
-       <div class="card-content">
-         <span class="card-title activator grey-text text-darken-4"><i class="fa fa-print"></i>&nbsp INTERNET<i class="material-icons right">more_vert</i></span>
-       </div>
-       <div class="card-action">
-        <a href="#">VER PROBLEMAS E SOLUÇÕES</a>
-       </div>
-       <div class="card-reveal">
-         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-         <p>Here is some more information about this product that is only revealed once clicked on.</p>
-       </div>
-     </div>
-  </div>
-
-  <div class="col s12 m6 l4 ">
-    <div class="card hoverable small">
-       <div class="card-image waves-effect waves-block waves-light">
-         <img class="activator filter-grayscale" src="assets/img/periferico1.jpg">
-       </div>
-       <div class="card-content">
-         <span class="card-title activator grey-text text-darken-4"><i class="fa fa-chain-broken"></i>&nbsp PERIFÉRICO<i class="material-icons right">more_vert</i></span>
-       </div><i class="fa fa-chain-broken"></i>
-       <div class="card-action">
-        <a href="#">VER PROBLEMAS E SOLUÇÕES</a>
-       </div>
-       <div class="card-reveal">
-         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-         <p>Here is some more information about this product that is only revealed once clicked on.</p>
-       </div>
-     </div>
-  </div>
-
-  <div class="col s12 m6 l4 ">
-    <div class="card hoverable small">
-       <div class="card-image waves-effect waves-block waves-light">
-         <img class="activator filter-grayscale" src="assets/img/sistema.jpg">
-       </div>
-       <div class="card-content">
-         <span class="card-title activator grey-text text-darken-4"><i class="fa fa-list-alt"></i>&nbsp SISTEMA<i class="material-icons right">more_vert</i></span>
-       </div>
-       <div class="card-action">
-        <a href="#">VER PROBLEMAS E SOLUÇÕES</a>
-       </div>
-       <div class="card-reveal">
-         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-         <p>Here is some more information about this product that is only revealed once clicked on.</p>
-       </div>
-     </div>
-  </div>
-
-  <div class="col s12 m6 l4 ">
-    <div class="card hoverable small">
-       <div class="card-image waves-effect waves-block waves-light">
-         <img class="activator filter-grayscale" src="assets/img/procedimento.jpg">
-       </div>
-       <div class="card-content">
-         <span class="card-title activator grey-text text-darken-4"><i class="fa fa-wrench"></i>&nbsp PROCEDIMENTO<i class="material-icons right">more_vert</i></span>
-       </div>
-       <div class="card-action">
-        <a href="#">VER PROBLEMAS E SOLUÇÕES</a>
-       </div>
-       <div class="card-reveal">
-         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-         <p>Here is some more information about this product that is only revealed once clicked on.</p>
+         <span class="card-title grey-text text-darken-4">{{problem.title}}<i class="material-icons right">close</i></span>
+         <p>{{problem.description}}</p>
        </div>
      </div>
   </div>
 
 
-
-
-</div>
+</section>
 
 
   <br/><br/>

@@ -1,0 +1,53 @@
+  
+  {
+    "User":{
+      "_id": "int"
+      , "userName": "String"
+      , "password": "String" 
+      , "email" : "String"
+      , "sector": "String"
+    }
+    ,"Question":{
+      "_id": "int"
+      , "title": "String"
+      , "description": "String"
+      , "category": "String"
+      , "writtenBy": {
+          "user":{
+            "_id": "int"
+            , "userName": "String"
+          }
+      }
+      , "solutions":  [{
+          "title": "String"
+          , "description": "String"
+          , "resolved": "Number"
+          , "author": {
+                "user":{
+                  "_id": "int"
+                  , "userName": "String"
+                }
+            }
+          , "steps":  [{
+               "text": "String"
+            }]
+          , "comments": [{
+            "user": "String"
+            , "text": "String"           
+            }]
+        }]        
+    }
+    ,"Occurrence":{
+      "_id": "int"
+      , "responsible": "String"
+      , "problems": [{
+          "name": "String" 
+          ,  "description": "String"
+        }]
+      , "Question": {}
+      , "solutions":[{
+          "name": "String" 
+          ,  "description": "String"
+        }]
+    }
+  }
