@@ -9,6 +9,7 @@
     , 'simpledesk.dashboard'
     , 'simpledesk.register'
     , 'simpledesk.problemList'
+    , 'simpledesk.problemDetail'
 
     // External Dependencies
     , 'firebase'

@@ -29,6 +29,26 @@
   		    })
   	  	}
 
+      var ref = new Firebase(APP_SETTINGS.API_URL);
+
+      $scope.doFacebookLogin = function(){
+          ref.authWithOAuthPopup("facebook", function(error, authData) {
+              if (error) {
+                  console.log("Falha no login!!", error);
+              }else{
+                  $rootScope.user = {
+                      name: authData.facebook.displayName,
+                      email: authData.facebook.email,
+                      image: authData.facebook.profileImageURL
+                  };
+                  $location.path('/');
+                  $scope.$apply();
+              }
+          }, {
+              scope: "email"
+          });
+      }
+
   }
 
 }());

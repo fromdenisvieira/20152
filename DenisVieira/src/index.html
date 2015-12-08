@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>SIMPLE DESK</title>
 
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
     <link href="lib/Materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
@@ -14,9 +15,7 @@
   </head>
   <body ng-app="simpledesk">
 
-
-
-  <div class="navbar-fixed">
+  <!-- <div class="navbar-fixed">
     <nav class="light-blue lighten-1" role="navigation" ng-hide="state.name == 'login'">
       <div class="nav-wrapper container">
         <a href="#" class="brand-logo center">SIMPLE DESK</a>
@@ -54,7 +53,15 @@
 
       </div>
     </nav>
-  </div>
+  </div> -->
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="../../assets/img/wallpaper.jpg"></div>
+    <h1 class="center white-text ">SIMPLE DESK</h1>
+    <div class="center"><a class="waves-effect waves-light btn-large red"><i class="material-icons right">power_settings_new</i>CONTRIBUA</a>
+    </div>
+    </div>
+
 
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
@@ -93,6 +100,7 @@
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/Materialize/dist/js/materialize.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="app/init.js"></script>
 
@@ -121,6 +129,9 @@
 
     <script src="app/modules/problemList/module.js"></script>
     <script src="app/modules/problemList/controllers/ProblemListRetrieveCtrl.js"></script>
+
+    <script src="app/modules/problemDetail/module.js"></script>
+    <script src="app/modules/problemDetail/controllers/ProblemDetailRetrieveCtrl.js"></script>
 
     <script src="app/modules/register/module.js"></script>
     <script src="app/modules/register/controllers/RegisterRetrieveCtrl.js"></script>

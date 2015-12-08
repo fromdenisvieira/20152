@@ -8,18 +8,18 @@
 
 	function DashboardRetrieveCtrl($scope, SocialAuthSvc,$rootScope, $location, APP_SETTINGS,$http) {
 
-		    SocialAuthSvc.$onAuth(function(authData){
-		    	console.log(authData);
-			    if(authData === null){
-			      console.log("Usuário não autenticado");
-					$location.path('login');
-			    }
-			    else{
-			      console.log("Usuário está autenticado");
-			      //console.log(authData);
-			    }
-			    $scope.authData = authData;
-				});
+		    // SocialAuthSvc.$onAuth(function(authData){
+		    // 	console.log(authData);
+			//     if(authData === null){
+			//       console.log("Usuário não autenticado");
+			// 		$location.path('login');
+			//     }
+			//     else{
+			//       console.log("Usuário está autenticado");
+			//       //console.log(authData);
+			//     }
+			//     $scope.authData = authData;
+			// 	});
 
 				$scope.searchActive = function(){
 					if($scope.search === ''){
@@ -45,5 +45,3 @@
 	}
 
 }());
-
-
