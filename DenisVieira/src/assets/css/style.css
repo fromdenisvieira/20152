@@ -1,3 +1,7 @@
+a{
+    text-decoration: none !important;
+}
+
 .filter-contrast {
     -webkit-filter: contrast(4);
     filter: contrast(4);
